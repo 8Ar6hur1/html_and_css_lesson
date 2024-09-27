@@ -1,0 +1,53 @@
+p.text:not(:empty) {
+    color: gray;
+}
+
+p.text::empty::after {
+    content: attr(title);
+}
+
+#some_id::after {
+    content: '123';
+    color: rebeccapurple;
+    text-decoration: line-through;
+}
+
+.main_link::first-letter {
+    color: aqua;
+}
+
+.main_link {
+    color: chocolate;
+    text-decoration: none;
+}
+
+p:first-of-type {
+    color: darkolivegreen;
+    text-decoration: line-through;
+}
+
+p:last-of-type {
+    color: darkolivegreen;
+    text-decoration: line-through;
+}
+
+.main_link:hover {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+.main_link:active {
+    text-decoration: line-through;
+}
+
+.main_link:visited {
+    text-decoration: line-through;
+    color: goldenrod;
+}
+
+input:required
+input {color: blue;}
+input:focus {color: red;}
+
